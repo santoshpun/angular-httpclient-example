@@ -1,0 +1,25 @@
+Steps:
+
+1. Install json-server globally using the following command
+    sudo npm install -g json-server
+    
+    # -D Package will appear in your devDependencies.
+
+2. Check json server version using below command
+
+    json-server -v
+
+3. Create json file to host using json-server locally on your machine
+    
+    File: repos.json
+    {
+        "repos": {
+                "id": 1,
+                "name": "Angular kickstarter project",
+                "html_url": "https://github.com/santoshpun/angular-basics",
+                "description": "angular kickstart project using Angular 8"
+            }
+    }
+
+4. Start json server with json file using following command
+    json-server --watch repos.json
